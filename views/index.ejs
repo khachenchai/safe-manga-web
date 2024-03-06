@@ -1,0 +1,21 @@
+<%- include('../components/head') %>
+<%- include('../components/navbar') %>
+    <main class="container mx-auto min-h-screen py-4">
+        <h1 class="text-3xl font-semibold mt-4">Recommend mangas</h1>
+        <div class="grid grid-cols-4 gap-4 mt-4">
+            <% data.forEach(manga => { %>
+                <a href="/<%= manga.id %>/detail">
+                    <div class="bg-white shadow-lg rounded-lg px-4 py-2 hover:-translate-y-2 transition hover:shadow-xl">
+                        <div class="w-full flex flex-col items-center">
+                            <img src="<%= manga.poster %>" alt="">
+                        </div>
+                        <hr class="mt-2 mb-0">
+                        <p class="text-base text-center text-slate-500"><%= manga.category %></p>
+                        <p class="text-lg font-semibold text-center"><%= manga.title %></p>
+                    </div>
+                </a>
+            <% }) %>
+        </div>
+    </main>
+</body>
+</html>

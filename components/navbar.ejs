@@ -1,0 +1,25 @@
+<nav class="w-full h-16 bg-red-400 shadow-xl rounded-b-xl sticky top-0 z-10">
+    <div class="container mx-auto px-4 h-full flex justify-start items-center gap-8">
+        <a href="/" class="text-lg font-medium"><i class="fad fa-home mr-1"></i>Home</a>
+        <div class="flex items-center justify-start ml-8 h-full">
+            <div class="h-full w-full px-4 hover:bg-red-200 <%= category && category === 'Romantic' ? 'bg-red-200' : '' %>">
+                <a href="/category?category=romantic" class=" h-full flex flex-col justify-center">Romantic</a>
+            </div>
+            <div class="h-full w-full px-4 hover:bg-red-200 <%= category && category === 'Adventure' ? 'bg-red-200' : '' %>">
+                <a href="/category?category=adventure" class=" h-full flex flex-col justify-center">Adventure</a>
+            </div>
+            <div class="h-full w-full px-4 hover:bg-red-200 <%= category && category === 'Action' ? 'bg-red-200' : '' %>">
+                <a href="/category?category=action" class=" h-full flex flex-col justify-center">Action</a>
+            </div>
+            <div class="h-full w-full px-4 hover:bg-red-200 <%= category && category === 'Fantasy' ? 'bg-red-200' : '' %>">
+                <a href="/category?category=fantasy" class=" h-full flex flex-col justify-center">Fantasy</a>
+            </div>
+            <div class="h-full w-full px-4 hover:bg-red-200 <%= category && category === 'Drama' ? 'bg-red-200' : '' %>">
+                <a href="/category?category=drama" class=" h-full flex flex-col justify-center">Drama</a>
+            </div>
+            <div class="h-full w-full px-4 hover:bg-red-200 <%= category && category === 'Comedy' ? 'bg-red-200' : '' %>">
+                <a href="/category?category=comedy" class=" h-full flex flex-col justify-center">Comedy</a>
+            </div>
+        </div>
+    </div>
+</nav>
